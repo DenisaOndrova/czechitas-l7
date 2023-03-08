@@ -30,3 +30,7 @@ body {
 .msg--invalid {
 	background-color: red;
 }
+
+button.active {
+	background-color: yellow;
+  }

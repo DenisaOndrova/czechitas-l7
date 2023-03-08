@@ -8,11 +8,33 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1> Můj nadpis </h1>
+	<div class="firstNumber">
+		<p>First number:</p>
+		<div class="column1">
+			<input type="number" value="0" class="qty" id="number1" />
+		</div>
+		
+	</div>
 
-	<p class="msg"></p>
+	<button onclick="buttonAction(this)" class="plus">+</button>
+	<button onclick="buttonAction(this)" class="minus">-</button>
+	<button onclick="buttonAction(this)" class="multiply">*</button>
+	<button onclick="buttonAction(this)" class='divide'>:</button>
 	
-	<p id="summary"></p>
+	<div class="secondNumber">
+		
+		<div class="column2">
+			<input type="number" value="0" id="number2" />
+		</div>
+	</div>
+	<button onclick="calculate()" class='result'>=</button>
+	<div class="finalResult">
+		
+		<div class="column3">
+			<input type="number" readonly value="0" id="number3" />
+		</div>
+	</div>
+
 
 	<script src="main.js"></script>
 </body>
